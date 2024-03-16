@@ -3,9 +3,6 @@ const withNextra = require('nextra')({
     themeConfig: './theme.config.jsx'
   })
    
-  const isProduction = process.env.NODE_ENV === "production";
-  const assetPrefix = isProduction ? "/michaelcizmar.com" : "";
-
   const nextConfig = {
     images: {
       unoptimized: true,
@@ -17,6 +14,16 @@ const withNextra = require('nextra')({
     basePath: assetPrefix,
     output: "export",
   };
+
+  if (process.env.GITHUB_REPOSITORY) {
+    const repositoryName = process.env.GITHUB_REPOSITORY.split('/')[1]
+  
+    nextConfig = {
+      ...nextConfig,
+      assetPrefix: `/${repositoryName}/`,
+      basePath: `/${repositoryName}`,
+    }
+  }
   
   module.exports = {
     ...withNextra(),
