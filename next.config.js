@@ -10,8 +10,6 @@ const withNextra = require('nextra')({
     reactStrictMode: true,
     swcMinify: true,
     trailingSlash: true,
-    assetPrefix,
-    basePath: assetPrefix,
     output: "export",
   };
 
