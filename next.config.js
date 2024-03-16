@@ -13,15 +13,6 @@ const withNextra = require('nextra')({
     output: "export",
   };
 
-  if (process.env.GITHUB_REPOSITORY) {
-    const repositoryName = process.env.GITHUB_REPOSITORY.split('/')[1]
-  
-    nextConfig = {
-      ...nextConfig,
-      assetPrefix: `/${repositoryName}/`,
-      basePath: `/${repositoryName}`,
-    }
-  }
   
   module.exports = {
     ...withNextra(),
