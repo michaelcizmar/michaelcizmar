@@ -3,7 +3,7 @@ const withNextra = require('nextra')({
     themeConfig: './theme.config.jsx'
   })
    
-  const nextConfig = {
+  let nextConfig = {
     images: {
       unoptimized: true,
     },
