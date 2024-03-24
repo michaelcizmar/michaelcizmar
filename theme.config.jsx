@@ -1,5 +1,5 @@
 export default {
-  footer: <p>MIT 2023 © Nextra.</p>,
+  footer: <p>2024 © Michael Cizmar - All Rights Reserved.</p>,
   head: ({ title, meta }) => (
     <>
       {meta.description && (
@@ -14,8 +14,8 @@ export default {
   darkMode: false,
   navs: [
     {
-      url: 'https://github.com/shuding/nextra',
-      name: 'Nextra'
+      url: 'https://mcplusa.com/',
+      name: 'MC+A'
     }
   ]
 }
