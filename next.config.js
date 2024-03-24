@@ -10,7 +10,7 @@ const withNextra = require('nextra')({
     reactStrictMode: true,
     swcMinify: true,
     trailingSlash: true,
-    output: "export",
+    output: 'export',
   };
 
   
