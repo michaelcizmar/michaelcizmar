@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
 export default function Document() {
   const meta = {
     title: 'Welcome to Michael Cizmar\'s site',
@@ -21,11 +22,13 @@ export default function Document() {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
+        <meta name="msvalidate.01" content="3B340CB99F1D03708E0BF22298604557" />
       </Head>
       <body>
         <Main />
         <NextScript />
       </body>
+      
     </Html>
   )
 }
