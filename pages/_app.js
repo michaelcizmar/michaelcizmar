@@ -22,7 +22,7 @@ export default function Nextra({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-      <GoogleAnalytics gaId="UA-2330991-20" />
+      <GoogleAnalytics gaId="GTM-TR594WD7" />
     </>
   )
 }
